@@ -1,0 +1,20 @@
+<div class="container">
+
+  <h2>Customer Entry</h2>
+
+  <input [(ngModel)]="name" placeholder="Enter Name" />
+  <input [(ngModel)]="mobile" placeholder="Enter Mobile" />
+
+  <button (click)="createCustomer()">Add Customer</button>
+
+  <hr />
+
+  <h3>Customer List</h3>
+
+  <ul>
+    <li *ngFor="let c of customers">
+      {{ c.name }} - {{ c.mobile }}
+    </li>
+  </ul>
+
+</div>
